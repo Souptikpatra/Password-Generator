@@ -1,0 +1,120 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 231, 245);
+}
+#container{
+    height: 600px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container > h1{
+    font-family: cursive;
+}
+#output-box{
+    width: 80%;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#output{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+#display-output{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+}
+#password{
+    font-size: 40px;
+}
+#copy-btn{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-bar{
+    width: 100%;
+    height: 10px;
+    background-color: red;
+}
+/*-----------------------------------------------------------------------*/
+#customize-box{
+    height: 350px;
+    width: 80%;
+    margin-top: 60px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+}
+#customize-box > h2{
+    font-size: 28px;
+    font-family: cursive;
+    margin-left: 20px;
+}
+#customize-container{
+    width: 100%;
+    height: 254px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 254px;
+    grid-template-areas: 
+        "left right";
+}
+#length-selector{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#length{
+    height: 30px;
+    width: 50px;
+    margin-top: 20px;
+    border-radius:5px ;
+}
+#custom-option{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*-------------------------------*/
+#control-buttons{
+    margin-top: 20px;
+}
+.btm-btn{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(122, 223, 21);
+    transition: all 0.3s ease;
+}
+
+.btm-btn:hover{
+    background-color: chartreuse
+}
+
+
+
