@@ -118,3 +118,32 @@ body{
 
 
 
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    #container {
+        width: 90%;
+        height: auto;
+    }
+    #output-box {
+        width: 100%;
+    }
+    #customize-box {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #customize-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "left"
+            "right";
+    }
+    #length-selector, #custom-option {
+        width: 100%;
+    }
+    #copy-btn {
+        width: 30%;
+    }
+}
