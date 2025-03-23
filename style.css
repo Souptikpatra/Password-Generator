@@ -1,5 +1,10 @@
-
+*{
+    padding: 0px;
+    margin: 0px
+}
 body{
+    padding: 0px;
+    margin: 0px;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -69,7 +74,7 @@ body{
 #customize-box > h2{
     font-size: 28px;
     font-family: cursive;
-    margin-left: 20px;
+   margin: 20px;
 }
 #customize-container{
     width: 100%;
@@ -117,33 +122,22 @@ body{
 }
 
 
-
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
-    #container {
-        width: 90%;
-        height: auto;
-    }
-    #output-box {
-        width: 100%;
-    }
-    #customize-box {
-        width: 100%;
-        margin-top: 20px;
-    }
-    #customize-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+@media screen and (max-width: 728px) {
+    #customize-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: 
-            "left"
-            "right";
+            "top"
+            "bottom";
     }
-    #length-selector, #custom-option {
-        width: 100%;
+    #length-selector{
+        grid-area: top;
     }
-    #copy-btn {
-        width: 30%;
+    #custom-option{
+        grid-area: bottom;
     }
-}
+    #container >h1 , #customize-box > h2 {
+        font-size: 25px;
+    }
+  }
